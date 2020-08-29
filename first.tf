@@ -63,7 +63,8 @@ resource "aws_instance" "myinstance" {
   connection {
     type        = "ssh"
     user        = "ec2-user"
-    private_key = file("C:/Users/ashukuma/Downloads/mykp.pem")
+    #private_key = file("C:/Users/ashukuma/Downloads/mykp.pem")
+    private_key = https://github.com/AshutoshKumar26/terraform/blob/master/mykp.ppk
     host        = self.public_ip
   }
   provisioner "remote-exec" {
