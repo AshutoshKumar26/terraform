@@ -9,8 +9,8 @@ variable "availability_zone" {
 variable "ami" {
   type = "map"
   default = {
-    #"ap-south-1a" = "ami-0ebc1ac48dfd14136"
-    #"ap-south-1b" = "ami-0a780d5bac870126a"
+    "ap-south-1a" = "ami-0ebc1ac48dfd14136"
+    "ap-south-1b" = "ami-0a780d5bac870126a"
   }
 }
  
